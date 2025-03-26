@@ -37,12 +37,14 @@ ul {
   background-color: var(--bg-back-900);
   min-height: 100vh;
   display: block;
-  position: fixed;
-  left: 270px;
   padding: 0 30px;
-  top: 0;
-  right: 0;
   opacity: 1;
+}
+.hidden {
+  display: none !important;
+}
+.main-content {
+  padding-left: 270px;
 }
 .padd-15 {
   padding-left: 15px;
@@ -54,7 +56,41 @@ ul {
   width: 100%;
   margin: auto;
 }
+.section .container {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: var(--text-back-900);
+  font-weight: bold;
+  position: relative;
+}
 
+.section-title h2::before {
+  content: "";
+  height: 4px;
+  width: 50px;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.section-title h2::after {
+  content: "";
+  height: 4px;
+  width: 25px;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -209,10 +245,6 @@ ul {
   color: var(--text-back-900);
 }
 
-.home .home-img img {
-  height: 400px;
-}
-
 .home .home-info {
   flex: 0 0 60%;
 }
@@ -230,7 +262,7 @@ ul {
 }
 .minha-profissao {
   font-size: 30px;
-  max-resolution: 15px 0;
+  margin: 15px 0;
 }
 
 .typing {
@@ -246,4 +278,94 @@ ul {
   max-width: 40%;
   text-align: center;
   position: relative;
+}
+
+.home-img::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  right: 20px;
+  border-bottom: 10px solid red;
+  border-right: 10px solid red;
+  bottom: -40px;
+}
+.home-img::before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: -20px;
+  border-top: 10px solid red;
+  border-left: 10px solid red;
+  top: -40px;
+}
+.home .home-img img {
+  margin: auto;
+  border-radius: 5px;
+  height: 400px;
+  background-color: red;
+}
+
+/* Sobre mim */
+
+.about .about-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--text-back-900);
+}
+.about .about-content .about-text h3 span {
+  color: red;
+}
+.about .about-content .about-text p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+}
+
+.about .about-content .personal-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin-top: 40px;
+}
+.about .about-content .personal-info .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.about .about-content .personal-info .info-item p {
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--text-back-900);
+  border-bottom: 1px solid var(--bg-black-50);
+}
+
+.about .about-content .personal-info .info-item span {
+  font-weight: 400;
+  color: var(--text-black-700);
+  display: inline-block;
+}
+.about .about-content .personal-info .buttons {
+  margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.about .about-content .skills {
+  flex: 0 0 40%;
+  max-width: 40%;
+  margin-top: 40px;
 }
