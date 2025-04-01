@@ -5,10 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" hrerf="css/skins/color-1.css" />
+    <link rel="stylesheet" href="css/skins/color-5.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style-switcher.css" />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled />
   </head>
   <body>
     <div class="main-container">
@@ -21,21 +52,24 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-user"></i>Sobre</a>
+            <a href="#about"><i class="fa fa-user"></i>Sobre</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-list"></i>Skils</a>
+            <a href="#service"><i class="fa fa-list"></i>Services</a>
           </li>
           <li>
-            <a href="#"><i class="fa fa-comments"></i>Contato</a>
+            <a href="#portifolio"><i class="fa fa-list"></i>Portifolio</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-comments"></i>Contato</a>
           </li>
         </ul>
       </div>
       <div class="main-content">
-        <section class="home section">
+        <section class="home section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -58,7 +92,7 @@
             </div>
           </div>
         </section>
-        <section class="about section hidden">
+        <section class="about section" id="about">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -264,7 +298,7 @@
             </div>
           </div>
         </section>
-        <section class="service section">
+        <section class="service section" id="service">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -329,7 +363,7 @@
             </div>
           </div>
         </section>
-        <section class="portifolio section">
+        <section class="portifolio section" id="portifolio">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -341,9 +375,110 @@
                 <h2>Meus Projetos</h2>
               </div>
             </div>
+            <div class="row">
+              <div class="portifolio-item padd-15">
+                <div class="portifolio-item-inner shadow-dark">
+                  <img stryle="width: 100%;" src="images/perfil.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Contato</h2>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Vc jewdlksdm?</h3>
+            <h4 class="contact-sub-title padd-15">No, saijsi dolsikd</h4>
+            <div class="row">
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Call Us on</h4>
+                <p>(48) 99932-7602</p>
+              </div>
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>Office</h4>
+                <p>Islamabad</p>
+              </div>
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>carolinicristini1@gmail.com</p>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Send ME AN EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">No, saijsi dolsikd</h4>
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Nome" />
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <textarea
+                      name=""
+                      class="form-group"
+                      id=""
+                      placeholder="Mensagem"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
     </div>
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"> </i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas"> </i>
+      </div>
+      <h4>Tema</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <script src="/js/style-switcher.js"></script>
   </body>
 </html>
